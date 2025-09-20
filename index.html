@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive JS Demo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>JavaScript Event Handling & Interactive Elements</h1>
+
+  <!-- Interactive Feature 1: Light/Dark Mode Toggle -->
+  <section>
+    <h2>Light/Dark Mode</h2>
+    <button id="themeToggle">Toggle Dark Mode</button>
+  </section>
+
+  <!-- Interactive Feature 2: Counter Game -->
+  <section>
+    <h2>Click Counter</h2>
+    <button id="countBtn">Click Me!</button>
+    <p>Count: <span id="countDisplay">0</span></p>
+  </section>
+
+  <!-- Form with custom validation -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" />
+        <small class="error" id="nameError"></small>
+      </label><br/><br/>
+
+      <label>
+        Email:
+        <input type="email" id="email" />
+        <small class="error" id="emailError"></small>
+      </label><br/><br/>
+
+      <label>
+        Password:
+        <input type="password" id="password" />
+        <small class="error" id="passwordError"></small>
+      </label><br/><br/>
+
+      <button type="submit">Submit</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
